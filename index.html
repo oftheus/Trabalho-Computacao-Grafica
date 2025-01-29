@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho 2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="ui" class="project-info">
+      <h2>Trabalho 2 de Computação Gráfica</h2>
+      <button id="toggle-camera" aria-label="Alternar entre as câmeras disponíveis">Alternar Câmera</button>
+      <section id="details" aria-labelledby="details-title">
+        <h3 id="details-title">Detalhes do Trabalho</h3>
+        <p>
+          <strong>Alunos:</strong> 
+        </p>
+        <ul>
+          <li>Matheus Gonçalves</li>
+          <li>Adrián Coderque</li>
+        </ul>
+        <p>
+          <strong>Descrição:</strong> Cena 3D com alternância entre duas câmeras.
+        </p>
+        <h4>Detalhes Técnicos</h4>
+        <ul>
+          <li>
+            <strong>Câmera 1:</strong> Projeção perspectiva e orbita a cena.
+          </li>
+          <li>
+            <strong>Câmera 2:</strong> Projeção ortogonal, estática na posição (50, 50, 50).
+          </li>
+        </ul>
+      </section>
+    </div>
+    <canvas id="webgl-canvas"></canvas>
+    <script src="./main.js" type="module"></script>
+    <script src="./mesh.js" type="module"></script>
+    <script src="./camera.js" type="module"></script>
+    <script src="./light.js" type="module"></script>
+    <script src="./shader.js" type="module"></script>
+    <script src="./phong.vert.js" type="module"></script>
+    <script src="./phong.frag.js" type="module"></script>
+    <script src="./half-edge.js" type="module"></script>
+  </body>
+</html>
